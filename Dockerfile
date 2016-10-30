@@ -3,9 +3,7 @@ MAINTAINER Chad Sailer
 ENV container=docker
 
 # Install additional packages
-RUN dnf makecache fast \
- && dnf -y install deltarpm epel-release initscripts \
- && dnf -y update \
+RUN dnf -y update \
  && dnf -y install \
       ansible \
       sudo \
