@@ -8,6 +8,7 @@ RUN dnf -y update \
       ansible \
       sudo \
       which \
+      python2-dnf \
  && dnf clean all
 
 # Disable requiretty.
